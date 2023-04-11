@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin: 20px auto;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        li {
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            width: 200px;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 80%;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .artist {
+            text-align: center;
+            margin: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+        .genre {
+            text-align: center;
+            margin: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+        .price {
+            text-align: center;
+            margin: 5px;
+            color: #007bff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    {% if results %}
+        <ul>
+        {% for result in results %}
+            <li>{{ result.artistName }} - {{ result.collectionName }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</body>
+</html>
