@@ -8,3 +8,11 @@ Visit in your web browser to see the search form. Submit the form with a search 
 
 > http://localhost:8000/ 
 
+* Search Form
+
+![search form](./results/1.jpg)
+
+* Search Results
+
+![search results](./results/2.jpg)
+
