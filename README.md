@@ -1,5 +1,7 @@
 # music_search
 
+A music search web app using Django.
+
 Run the Command
 
   > python manage.py runserver
